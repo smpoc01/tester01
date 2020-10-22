@@ -3,6 +3,7 @@ node {
 	def gradleContainer = docker.image('gradle:jdk8-alpine')
 	echo 'jenkins file started p1....'
 	if (gradleContainer) {
+		echo 'gradleContainer is ready....'
 	} else {
 		echo 'gradleContainer is empty....'
 	}
